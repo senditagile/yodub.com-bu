@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import ReactGA from 'react-ga';
 
 import Dropdown from './Dropdown';
-import { gotoPage } from '../../../api/url';
+// import { gotoPage } from '../../../api/url';
 
 import './index.scss';
 
@@ -20,7 +20,7 @@ const NavItem = ({ url, name, list }) => {
             category: 'User',
             action: `Click nav-menu: ${name}`,
           });
-          gotoPage(url);
+          // gotoPage(url);
         }}
       >
         {name}
