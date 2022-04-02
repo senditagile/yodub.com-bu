@@ -1,6 +1,13 @@
 const path = require('path');
 const tailwind = require('tailwindcss');
 
+const netlifyCmsPaths = {
+  resolve: `gatsby-plugin-netlify-cms-paths`,
+  options: {
+    cmsConfig: `/static/admin/config.yml`,
+  },
+}
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Starter',
@@ -95,6 +102,54 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-layout',
+      options: {
+        component: require.resolve('./src/components/Layout/layout.js'),
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: "apptain",
+        short_name: 'apptain',
+        start_url: '/',
+        background_color: '#ededed',
+        theme_color: '#384f7c',
+        display: 'standalone',
+        icons: [
+          {
+            src: '/favicons/android-chrome-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/favicons/android-chrome-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
+    },
+    {      
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          netlifyCmsPaths,
+          'gatsby-remark-autolink-headers',
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              showLineNumbers: true,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-external-links',
+          },
+        ],
+      },
+    },
+    'gatsby-plugin-catch-links',
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 };
