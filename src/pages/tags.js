@@ -43,7 +43,7 @@ const TagPage = ({ data }) => {
         </div>
       </div>
       <SEO
-        title="標籤"
+        title="Post Tags"
         url="/tags/"
         siteTitleAlt="apptain"
         isPost={false}

@@ -37,10 +37,6 @@
   "gaTrackId": "UA-84737574-3",
   "navbarList": [
     {
-      "href": "/guestbook/",
-      "title": "Guestbook"
-    },
-    {
       "href": "/tags/",
       "title": "Tags"
     }

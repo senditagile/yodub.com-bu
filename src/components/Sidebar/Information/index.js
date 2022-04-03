@@ -17,7 +17,7 @@ const Information = ({ totalCount, posts }) => (
     <hr />
     <LatestPost posts={posts} />
     <hr />
-    <Friend />
+    {/* <Friend /> */}
   </div>
 );
 

@@ -69,6 +69,7 @@ Sidebar.defaultProps = {
   latestPosts: [],
 };
 
+
 export default () => (
   <StaticQuery
     query={graphql`
