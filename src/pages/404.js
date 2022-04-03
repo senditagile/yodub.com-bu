@@ -1,25 +1,33 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import Layout from '@/components/Layout';
 
-const NotFoundPage = () => (
-  <Layout>
-    <section>
-      <div className='container h-screen flex justify-center items-center text-center'>
-        <div>
-          <h1 className='text-3xl font-semibold'>404: Page Not Found</h1>
-          <div className='mt-6 text-lg'>
-            We can’t seem to find the page you’re looking for. Try going back to
-            the previous page.
-          </div>
-          <a
-            href='/'
-            className='max-w-md inline-block px-4 py-2 bg-slate-500 text-white rounded-xl mx-auto mt-6'>
-            Back to Home
-          </a>
-        </div>
+import { Link, graphql } from 'gatsby';
+
+const NotFoundPage = ({ data }) => (
+  <div className="container">
+    <div className="row">
+      <div className="col">
+        <h4>找不到你的網頁，本站所有頁面為：</h4>
+        {data.allSitePage.edges.map(page => (
+          <Link to={page.node.path} href={page.node.path} key={page.node.path}>
+            <li>{page.node.path}</li>
+          </Link>
+        ))}
       </div>
-    </section>
-  </Layout>
+    </div>
+  </div>
 );
+
+export const pageQuery = graphql`
+  query getAllPages {
+    allSitePage {
+      edges {
+        node {
+          path
+        }
+      }
+    }
+  }
+`;
 
 export default NotFoundPage;

@@ -1,9 +1,5 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import PropTypes from 'prop-types';
-
-// import Seo from '@/components/SEO/Seo';
-import Layout from '@/components/Layout';
 
 import Link from 'gatsby-link';
 
@@ -40,7 +36,7 @@ const NavLink = ({ test, url, text }) => {
 
 const HomePageTemplate = ({ data }) => {
   // const { edges: group } = data.allMarkdownRemark
-
+  console.log(JSON.stringify(data));
   return (
     <>
       <div
@@ -52,7 +48,7 @@ const HomePageTemplate = ({ data }) => {
         <Sidebar />
         <div className="col-xl-6 col-lg-7 col-md-12 col-xs-12 order-2">
           {data.map(({ node }) => (
-            <Card {...data} url={data.slug ? data.slug : node.fields.slug} key={node.fields.slug} />
+            <Card {...node.frontmatter} url={data.slug ? data.slug : node.fields.slug} key={node.fields.slug} />
           ))}
 
           <div
@@ -78,16 +74,13 @@ const HomePageTemplate = ({ data }) => {
 };
 
 const HomePage = ({ data }) => {
-  //  const { frontmatter } = data.allMarkdownRemark;
 
   const { edges: frontmatter } = data.allMarkdownRemark;
 
-  console.log(JSON.stringify(frontmatter));
   return (
-    <Layout>
-      {/* <Seo data={frontmatter.seo} /> */}
+    <>
       <HomePageTemplate data={frontmatter} />
-    </Layout>
+    </>
   );
 };
 

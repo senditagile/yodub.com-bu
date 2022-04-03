@@ -6,7 +6,7 @@ import ReactGA from 'react-ga';
 import GithubCorner from '../GithubCorner';
 
 import NavItem from './NavItem';
-import { gotoPage } from '../../api/url';
+// import { gotoPage } from '../../api/url';
 import './index.scss';
 import { config } from '../../../data';
 
@@ -30,7 +30,7 @@ const Navbar = () => (
             category: 'User',
             action: 'Click navbar logo',
           });
-          gotoPage('/');
+          // gotoPage('/');
         }}
       >
         <span className="brand-logo">apptain</span>
