@@ -55,6 +55,7 @@ class BlogPost extends Component {
     const {
       html, frontmatter, fields, excerpt,
     } = node;
+    console.log(JSON.stringify(this.data.content));
 
     const { slug } = fields;
 
