@@ -36,8 +36,8 @@ const Sidebar = ({ totalCount, latestPosts }) => (
   <header className="intro-header site-heading text-center col-xl-2 col-lg-3 col-xs-12 order-lg-1">
     <div className="about-me">
       <Link to={about} href={about} className="name">
-        <img className="avatar" src={iconUrl} alt="apptain" />
-        <h4>apptain</h4>
+        <img className="avatar" src={iconUrl} alt="yodub" />
+        <h4>yodub</h4>
       </Link>
       <p className="mb-1">{wordings[0]}</p>
       <p className="mb-3">{wordings[1]}</p>

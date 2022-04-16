@@ -12,11 +12,11 @@ const Footer = () => (
         <div className="col-sm-12 text-center">
           <p className="copyright">
             Copyright&nbsp;
-            <ExternalLink href="https://apptain.com/" title="&copy;apptain" />
+            <ExternalLink href="https://yodub.com/" title="&copy;yodub" />
             &nbsp;
             {config.title}
             {new Date().getFullYear()}
-            &nbsp;apptain
+            &nbsp;yodub
           </p>
         </div>
       </div>

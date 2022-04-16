@@ -1,21 +1,21 @@
 {
-  "url": "https://apptain.com",
+  "url": "https://yodub.com",
   "meta": {
     "favicon": "https://ucarecdn.com/662c2a0f-b195-4644-a85b-3a4f563f19d3/favico.png",
-    "keyword": "apptain, blog, JavaScript",
-    "description": "apptain is a blog about how to do IT stuff",
+    "keyword": "yodub, blog, JavaScript",
+    "description": "yodub is a blog about how to do IT stuff",
     "theme_color": "#384f7c",
-    "google_site_verification": ""
+    "google_site_verification": "G-D0Z2YWLYVH"
   },
-  "name": "apptain",
+  "name": "yodub",
   "about": "/2018/02/08/a-career-in-software-where-to-begin/",
-  "email": "webmaster@apptain.com",
+  "email": "webmaster@yodub.com",
   "stats": {
-    "image": "https://ucarecdn.com/24ebd3fc-d702-4523-af6e-8183948f1c87/apptain.png",
-    "title": "apptain",
+    "image": "https://ucarecdn.com/24ebd3fc-d702-4523-af6e-8183948f1c87/yodub.png",
+    "title": "yodub",
     "description": "app"
   },
-  "title": "apptain",
+  "title": "yodub",
   "gitalk": {
     "repo": "senditagile",
     "admin": ["senditagile"],
@@ -28,11 +28,11 @@
   "License": "by",
   "friends": [
     {
-      "href": "https://apptain.com",
-      "title": "apptain"
+      "href": "https://yodub.com",
+      "title": "yodub"
     }
   ],
-  "iconUrl": "https://ucarecdn.com/24ebd3fc-d702-4523-af6e-8183948f1c87/apptain.png",
+  "iconUrl": "https://ucarecdn.com/24ebd3fc-d702-4523-af6e-8183948f1c87/yodub.png",
   "wordings": ["FullStack", "git", "devops", "GatsbyJS, ReactJS"],
   "gaTrackId": "UA-84737574-3",
   "navbarList": [
@@ -50,12 +50,12 @@
   "gaOptimizeId": "GTM-WHP7SC5",
   "carouselItems": [
     {
-      "src": "https://ucarecdn.com/24ebd3fc-d702-4523-af6e-8183948f1c87/apptain.png",
+      "src": "https://ucarecdn.com/24ebd3fc-d702-4523-af6e-8183948f1c87/yodub.png",
       "target": "/stats/"
     }
   ],
-  "zhihuUsername": "apptain",
-  "githubUsername": "apptain",
+  "zhihuUsername": "yodub",
+  "githubUsername": "yodub",
   "maxPostsInPage": 10,
-  "facebook": "apptain"
+  "facebook": "yodub"
 }

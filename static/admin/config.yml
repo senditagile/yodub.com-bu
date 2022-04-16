@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: senditagile/apptain # Path to your Github/Gitlab repository
+  repo: senditagile/yodub # Path to your Github/Gitlab repository
   base_url: https://api.netlify.com
   branch: main
 

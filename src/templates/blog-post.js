@@ -75,11 +75,11 @@ class BlogPost extends Component {
           <Content post={html} />
           <div className="m-message" style={bgWhite}>
             <ExternalLink
-              href="https://github.com/senditagile/apptain"
+              href="https://github.com/senditagile/yodub"
               title="Star"
             />
             <ExternalLink
-              href="https://github.com/apptain/"
+              href="https://github.com/yodub/"
               title="github"
             />
             。
@@ -93,7 +93,7 @@ class BlogPost extends Component {
         <SEO
           title={title}
           url={slug}
-          siteTitleAlt="apptain"
+          siteTitleAlt="yodub"
           isPost={false}
           description={excerpt}
           image={headerImage || 'https://i.imgur.com/M795H8A.jpg'}

@@ -34,7 +34,7 @@ const Navbar = () => (
           navigate('/');
         }}
       >
-        <span className="brand-logo">apptain</span>
+        <span className="brand-logo">yodub</span>
       </button>
       <button
         className="navbar-toggler"
@@ -44,7 +44,7 @@ const Navbar = () => (
       >
         <FontAwesomeIcon icon={faBars} />
       </button>
-      <GithubCorner url="https://github.com/senditagile/apptain" />
+      <GithubCorner url="https://github.com/senditagile/yodub" />
       <div
         className="collapse navbar-collapse flex-row-reverse"
         id="navbarSupportedContent"
